@@ -1,10 +1,14 @@
-import sum from "./skeleton";
+import generateFizzBuzz from "./skeleton";
 
-test("sum adds two numbers", () => {
-  expect(sum(4, 3)).toBe(7);
+test("returns an array with FizzBuzz replacement", () => {
+  expect(generateFizzBuzz(3)).toEqual([1,2,"Fizz"]);
 });
 
 
-test("sum adds two numbers cancelling", () => {
-  expect(sum(-4, 4)).toBe(0);
+test("returns an array with FizzBuzz replacement", () => {
+  expect(generateFizzBuzz(5)).toEqual([1,2,"Fizz", 4, "Buzz"]);
+});
+
+test("returns an array with FizzBuzz replacement", () => {
+  expect(generateFizzBuzz(15)).toEqual([1,2,"Fizz", 4, "Buzz","Fizz",7,8,"Fizz","Buzz",11,"Fizz",13,14,"FizzBuzz"]);
 });
