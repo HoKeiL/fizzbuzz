@@ -1,3 +1,5 @@
+type arrayValueType = "Fizz"|"Buzz"|"FizzBuzz"|number
+
 /**
  * function: generateFizzBuzz
  * Adds together two numbers
@@ -5,8 +7,9 @@
  * 
  * @returns array 1 to N containing numbers or string 
  */
-function generateFizzBuzz(n: number): (number|string)[] {
-  const outputArray = [];
+
+function generateFizzBuzz(n: number): arrayValueType[] {
+  const outputArray:arrayValueType[] = [];
 
   for(let i=1; i<=n;i++){
     if(i % 3 === 0 && i % 5 === 0){
